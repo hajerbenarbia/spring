@@ -17,7 +17,7 @@ class SpringBootEntityApplicationTests {
 	private UserRepository userRepository;
 	@Test
 	public void testCreateUser() {
-		User user = new User("ali","daly","dalyali","azerty",new Date());
+		User user = new User("ali","dal","daaa","azerty",new Date());
 		userRepository.save(user);
 	}
 	
@@ -29,7 +29,7 @@ class SpringBootEntityApplicationTests {
     @Test
     public void testUpdateUser(){
     	User user = userRepository.findById(1L).get();
-    	user.setFirstname("rakia");
+    	user.setFirstname("hajer");
     	userRepository.save(user);
     	System.out.println(user);
     	
